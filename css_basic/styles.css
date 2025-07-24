@@ -54,6 +54,25 @@ table {
 
 
 /* Fonts and colors */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo {
+    font-size: 1.8em;
+    color: gold;
+    margin-right: 20px;
+}
 
 body {
 	font-family: 'Josefin Sans', serif;
@@ -72,6 +91,19 @@ header a {
 aside {
 	background: #FAFAFA;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #b0d5fa;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 aside p {
 	border: 1px solid #bbb;
 	background: #ddd;
@@ -79,6 +111,13 @@ aside p {
 }
 footer a {
 	color: rgba(0, 0, 0, 0.8);
+}
+footer {
+    text-align: center;
+    background-color: #fea2d6;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
 }
 a {
 	color: #F80002;
@@ -92,6 +131,25 @@ a {
 		width: 1100px;
 		margin: 0 auto;
 	}
+}
+main, body {
+	display: flex;
+}
+body{
+	flex-direction: column;
+}
+main{
+	flex-direction: row;
+	flex: auto;
+}
+article{
+	flex: 2;
+	overflow-y: auto;
+}
+aside{
+	flex: 1;
+	overflow-y: auto;
+
 }
 
 article {
