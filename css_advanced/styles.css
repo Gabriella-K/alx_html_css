@@ -248,4 +248,147 @@ section.testimonial p {
   }
 }
 
+/* Popular Tutorials Section */
+.popular-tutorials {
+  background-color: white;
+  padding: 80px 20px;
+  color: #333;
+}
+
+.popular-tutorials h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.popular-tutorials h2 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.tutorials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.tutorial-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.play-button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.play-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.tutorial-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 20px 10px 20px;
+  color: #333;
+}
+
+.tutorial-card > p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+  margin: 0 20px 15px 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 15px 20px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.author h4 {
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+}
+
+.rating {
+  margin: 0 20px 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.rating img {
+  height: 16px;
+  width: auto;
+}
+
+.duration {
+  font-size: 14px;
+  color: #c271ff;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tutorials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tutorial-card {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .popular-tutorials h2 {
+    font-size: 28px;
+  }
+}
+
 
