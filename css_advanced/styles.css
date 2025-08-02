@@ -391,4 +391,110 @@ section.testimonial p {
   }
 }
 
+/* Free Membership Section */
+.free-membership {
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.free-membership h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.free-membership h2 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+/* Container for the four features - horizontal layout */
+.free-membership .features-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  flex-wrap: wrap;
+}
+
+/* Individual feature column */
+.free-membership .feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Smiley face icon */
+.free-membership .feature-card img {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(230deg) brightness(118%) contrast(119%);
+}
+
+/* Feature title */
+.free-membership .feature-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* Feature description */
+.free-membership .feature-card p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #cccccc;
+  margin: 0;
+}
+
+/* Register button */
+.free-membership button {
+  background: #c271ff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.free-membership button:hover {
+  background: #a55cd9;
+}
+
+/* Responsive design for free membership */
+@media (max-width: 768px) {
+  .free-membership .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .free-membership .feature-card {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .free-membership .feature-card img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .free-membership h2 {
+    font-size: 28px;
+  }
+}
+
 
